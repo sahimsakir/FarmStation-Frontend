@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Star Admin2 </title>
+    <title>Farm Station App</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="vendors/feather/feather.css">
     <link rel="stylesheet" href="vendors/mdi/css/materialdesignicons.min.css">
@@ -32,16 +32,17 @@
         <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex align-items-top flex-row">
             <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-start">
                 <div class="me-3">
-                    <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-bs-toggle="minimize">
+                    <button class="navbar-toggler navbar-toggler align-self-center" type="button"
+                        data-bs-toggle="minimize">
                         <span class="icon-menu"></span>
                     </button>
                 </div>
                 <div>
                     <a class="navbar-brand brand-logo" href="index.html">
-                        <img src="images/logo.png" alt="logo" />
+                        <img src="images/logo.jpeg" alt="logo" />
                     </a>
                     <a class="navbar-brand brand-logo-mini" href="index.html">
-                        <img src="images/logo.png" alt="logo" />
+                        <img src="images/logo.jpeg" alt="logo" />
                     </a>
                 </div>
             </div>
@@ -56,18 +57,22 @@
 
                     <li class="nav-item dropdown d-none d-lg-block user-dropdown">
                         <a class="nav-link" id="UserDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
-                            <img class="img-xs rounded-circle" src="images/faces/face8.jpg" alt="Profile image"> </a>
+                            <img class="img-xs rounded-circle" src="images/profileimg.png" alt="Profile image"> </a>
                         <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
                             <div class="dropdown-header text-center">
-                                <img class="img-md rounded-circle" src="images/faces/face8.jpg" alt="Profile image">
+                                <img class="img-md rounded-circle" src="images/profileimg.png" alt="Profile image">
                                 <p class="mb-1 mt-3 font-weight-semibold">Allen Moreno</p>
                             </div>
-                            <a class="dropdown-item" href="user-profile-view.html"><i class="dropdown-item-icon mdi mdi-account-outline text-primary me-2"></i> My Profile</a>
-                            <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-power text-primary me-2"></i>Sign Out</a>
+                            <a class="dropdown-item" href="user-profile-view.html"><i
+                                    class="dropdown-item-icon mdi mdi-account-outline text-primary me-2"></i> My
+                                Profile</a>
+                            <a class="dropdown-item"><i
+                                    class="dropdown-item-icon mdi mdi-power text-primary me-2"></i>Sign Out</a>
                         </div>
                     </li>
                 </ul>
-                <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-bs-toggle="offcanvas">
+                <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
+                    data-bs-toggle="offcanvas">
                     <span class="mdi mdi-menu"></span>
                 </button>
             </div>
@@ -81,58 +86,33 @@
                 <ul class="nav">
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">
-                            <i class="mdi mdi-grid-large menu-icon"></i>
-                            <span class="menu-title">Dashboard</span>
+                            <i class="menu-icon fa-solid fa-house"></i>
+                            <span class="menu-title">Home</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="auth">
-                             <i class=" menu-icon fa-solid fa-boxes-stacked"></i>
+                        <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false"
+                            aria-controls="auth">
+                            <i class=" menu-icon fa-solid fa-boxes-stacked"></i>
                             <span class="menu-title">Inventory</span>
                             <i class="menu-arrow"></i>
                         </a>
                         <div class="collapse" id="ui-basic">
                             <ul class="nav flex-column sub-menu">
-                                <li class="nav-item"> <a class="nav-link" href="inventory.html">Add An Item</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="inventory-list.html">List Of Items</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="inventory.html">Add Cow</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="inventory-list.html">List Of Cows</a>
+                                </li>
+                                <li class="nav-item"> <a class="nav-link" href="inventory-category.html">Add
+                                        Category</a>
+                                </li>
+                                <li class="nav-item"> <a class="nav-link" href="inventory-milk.html">Milk Collection</a>
+                                </li>
                             </ul>
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="activites.html">
-                            <i class="menu-icon mdi mdi-card-text-outline"></i>
-                            <span class="menu-title">Activites</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="report.html" >
-                            <i class="menu-icon mdi mdi-chart-line"></i>
-                            <span class="menu-title">Reports</span>
-                            
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-bs-toggle="collapse" href="#payroll" aria-expanded="false" aria-controls="auth">
-                            <i class="menu-icon fa-solid fa-chart-pie font-size-dashboard"></i>
-                            <span class="menu-title">payroll</span>
-                            <i class="menu-arrow"></i>
-                        </a>
-                        <div class="collapse" id="payroll">
-                            <ul class="nav flex-column sub-menu">
-                                <li class="nav-item"> <a class="nav-link" href="payroll.html">Add A Payment</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="payroll-list.html">Payroll List</a></li>
-                               
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="nav-item" >
-                        <a class="nav-link" href="request.html" >
-                            <i class="menu-icon fa-solid fa-code-pull-request"></i>
-                            <span class="menu-title">Request</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-bs-toggle="collapse" href="#icons" aria-expanded="false" aria-controls="auth">
+                        <a class="nav-link" data-bs-toggle="collapse" href="#icons" aria-expanded="false"
+                            aria-controls="auth">
                             <i class="menu-icon fa-solid fa-chart-pie font-size-dashboard"></i>
                             <span class="menu-title">Sales</span>
                             <i class="menu-arrow"></i>
@@ -141,38 +121,68 @@
                             <ul class="nav flex-column sub-menu">
                                 <li class="nav-item"> <a class="nav-link" href="sales-single.html">Sales List</a></li>
                                 <li class="nav-item"> <a class="nav-link" href="sales.html">Add A New Sale</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="buyer.html">Buyers List</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="buyer-single.html">Buyers Profile</a></li>
                             </ul>
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-bs-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
-                            <i class="menu-icon mdi mdi-account-circle-outline"></i>
-                            <span class="menu-title">User</span>
-                             <i class="menu-arrow"></i>
-                        </a>
-                        <div class="collapse" id="auth">
-                            <ul class="nav flex-column sub-menu">
-                                <li class="nav-item"> <a class="nav-link" href="user-list.html">List of users</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="user-creation.html">Create a new user</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    
-                    <li class="nav-item">
-                        <a class="nav-link" data-bs-toggle="collapse" href="#iconsnew" aria-expanded="false" aria-controls="icons">
-                            <i class="menu-icon fa-solid fa-chart-pie font-size-dashboard"></i>
+                        <a class="nav-link" data-bs-toggle="collapse" href="#iconsnew" aria-expanded="false"
+                            aria-controls="icons">
+                            <i class="menu-icon fa-solid fa-file-lines font-size-dashboard"></i>
                             <span class="menu-title">Expense</span>
                             <i class="menu-arrow"></i>
                         </a>
                         <div class="collapse" id="iconsnew">
                             <ul class="nav flex-column sub-menu">
+                                <li class="nav-item"> <a class="nav-link" href="expense.html">Add A New Purchase</a>
+                                </li>
+                                <li class="nav-item"> <a class="nav-link" href="expense-category.html">Category</a>
+                                </li>
                                 <li class="nav-item"> <a class="nav-link" href="expense-list.html">Expense List</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="expense.html">Add A New Expense</a></li>
                             </ul>
                         </div>
                     </li>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="report.html">
+                            <i class="menu-icon mdi mdi-chart-line"></i>
+                            <span class="menu-title">Reports</span>
+
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="collapse" href="#employee" aria-expanded="false"
+                            aria-controls="auth">
+                            <i class="menu-icon fa-solid fa-user font-size-dashboard"></i>
+                            <span class="menu-title">Employee</span>
+                            <i class="menu-arrow"></i>
+                        </a>
+                        <div class="collapse" id="employee">
+                            <ul class="nav flex-column sub-menu">
+                                <li class="nav-item"> <a class="nav-link" href="employee.html">Add A Employee</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="employee-list.html">Employee List</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="collapse" href="#auth" aria-expanded="false"
+                            aria-controls="auth">
+                            <i class="menu-icon fa-solid fa-user-plus font-size-dashboard"></i>
+                            <span class="menu-title">User</span>
+                            <i class="menu-arrow"></i>
+                        </a>
+                        <div class="collapse" id="auth">
+                            <ul class="nav flex-column sub-menu">
+                                <li class="nav-item"> <a class="nav-link" href="user-list.html">List of users</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="user-creation.html">Create a new
+                                        user</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+
                 </ul>
             </nav>
             <!-- partial -->
@@ -182,14 +192,15 @@
                     <div class="col-12 grid-margin">
                         <div class="card mb-5">
                             <div class="card-body ">
-<h2>User Profile</h2>
+                                <h2>Employee</h2>
                                 <form class="form-sample">
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="form-group row">
                                                 <label class="col-sm-12 ">Employee Name*</label>
                                                 <div class="col-sm">
-                                                    <input type="text" class="form-control" placeholder="Enter Name/ID" required />
+                                                    <input type="text" class="form-control" placeholder="Enter Name/ID"
+                                                        required />
                                                 </div>
                                             </div>
                                         </div>
@@ -205,7 +216,8 @@
                                             <div class="form-group row">
                                                 <label class="col-sm-12">Enter NID Number</label>
                                                 <div class="col-sm-12">
-                                                    <input type="number" placeholder="00000" class="form-control" required />
+                                                    <input type="text" placeholder="00000" class="form-control"
+                                                        required />
                                                 </div>
                                             </div>
                                         </div>
@@ -213,39 +225,18 @@
                                             <div class="form-group row">
                                                 <label class="col-sm-12">Enter Phone Number</label>
                                                 <div class="col-sm-12">
-                                                    <input type="number" placeholder="00000" class="form-control" required />
+                                                    <input type="text" placeholder="00000" class="form-control"
+                                                        required />
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
-                                            <div class="form-group row">
-                                                <label class="col-sm-12">Designation</label>
-                                                <div class="col-sm-12">
-                                                    <input type="text" placeholder="Senior Executive" class="form-control" required />
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group row">
-                                                <label class="col-sm-12">Department</label>
-                                                <div class="col-sm-12">
-                                                   <select class="form-control " required>
-                                                        <option>select</option>
-                                                        <option>Category1</option>
-                                                        <option>Category2</option>
-                                                        <option>Category3</option>
-                                                        <option>Category4</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                        </div>
-                                         <div class="col-md-6">
                                             <div>
                                                 <label for="formFileLg" class="form-label">Attach Document PDF</label>
                                                 <input class="form-control form-control-lg" id="formFileLg" type="file">
                                             </div>
                                         </div>
-                                         <div class="col-md-6">
+                                        <div class="col-md-6">
                                             <div>
                                                 <label for="formFileLg" class="form-label">User Image(png/jpg)</label>
                                                 <input class="form-control form-control-lg" id="formFileLg" type="file">
@@ -253,7 +244,7 @@
                                         </div>
                                     </div>
                                     <div class="mt-3">
-                                    <button type="submit" class="btn btn-primary mb-2 btn-sm">Save</button>
+                                        <button type="submit" class="btn btn-primary mb-2 btn-sm">Save</button>
                                     </div>
                                 </form>
 
@@ -265,8 +256,10 @@
                 <!-- partial:partials/_footer.html -->
                 <footer class="footer">
                     <div class="d-sm-flex justify-content-center justify-content-sm-between">
-                        <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Design and Developed By<a href="http://upscaleitsolutions.com/" target="_blank"> Upscale IT Solutions.</a></span>
-                        <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Copyright © 2021. All rights reserved.</span>
+                        <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Design and Developed
+                            By<a href="http://upscaleitsolutions.com/" target="_blank"> Upscale IT Solutions.</a></span>
+                        <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Copyright © 2021. All
+                            rights reserved.</span>
                     </div>
                 </footer>
                 <!-- partial -->
@@ -301,4 +294,3 @@
 </body>
 
 </html>
-
