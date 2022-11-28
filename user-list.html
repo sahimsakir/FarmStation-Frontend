@@ -39,10 +39,10 @@
                 </div>
                 <div>
                     <a class="navbar-brand brand-logo" href="index.html">
-                        <img src="images/logo.png" alt="logo" />
+                        <img src="images/logo.jpeg" alt="logo" />
                     </a>
                     <a class="navbar-brand brand-logo-mini" href="index.html">
-                        <img src="images/logo.png" alt="logo" />
+                        <img src="images/logo.jpeg" alt="logo" />
                     </a>
                 </div>
             </div>
@@ -57,10 +57,10 @@
 
                     <li class="nav-item dropdown d-none d-lg-block user-dropdown">
                         <a class="nav-link" id="UserDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
-                            <img class="img-xs rounded-circle" src="images/faces/face8.jpg" alt="Profile image"> </a>
+                            <img class="img-xs rounded-circle" src="images/profileimg.png" alt="Profile image"> </a>
                         <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
                             <div class="dropdown-header text-center">
-                                <img class="img-md rounded-circle" src="images/faces/face8.jpg" alt="Profile image">
+                                <img class="img-md rounded-circle" src="images/profileimg.png" alt="Profile image">
                                 <p class="mb-1 mt-3 font-weight-semibold">Allen Moreno</p>
                             </div>
                             <a class="dropdown-item" href="user-profile-view.html"><i
@@ -86,8 +86,8 @@
                 <ul class="nav">
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">
-                            <i class="mdi mdi-grid-large menu-icon"></i>
-                            <span class="menu-title">Dashboard</span>
+                            <i class="menu-icon fa-solid fa-house"></i>
+                            <span class="menu-title">Home</span>
                         </a>
                     </li>
                     <li class="nav-item">
@@ -99,45 +99,16 @@
                         </a>
                         <div class="collapse" id="ui-basic">
                             <ul class="nav flex-column sub-menu">
-                                <li class="nav-item"> <a class="nav-link" href="inventory.html">Add An Item</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="inventory-list.html">List Of Items</a>
+                                <li class="nav-item"> <a class="nav-link" href="inventory.html">Add Cow</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="inventory-list.html">List Of Cows</a>
+                                </li>
+                                <li class="nav-item"> <a class="nav-link" href="inventory-category.html">Add
+                                        Category</a>
+                                </li>
+                                <li class="nav-item"> <a class="nav-link" href="inventory-milk.html">Milk Collection</a>
                                 </li>
                             </ul>
                         </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="activites.html">
-                            <i class="menu-icon mdi mdi-card-text-outline"></i>
-                            <span class="menu-title">Activites</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="report.html">
-                            <i class="menu-icon mdi mdi-chart-line"></i>
-                            <span class="menu-title">Reports</span>
-
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-bs-toggle="collapse" href="#payroll" aria-expanded="false"
-                            aria-controls="auth">
-                            <i class="menu-icon fa-solid fa-chart-pie font-size-dashboard"></i>
-                            <span class="menu-title">payroll</span>
-                            <i class="menu-arrow"></i>
-                        </a>
-                        <div class="collapse" id="payroll">
-                            <ul class="nav flex-column sub-menu">
-                                <li class="nav-item"> <a class="nav-link" href="payroll.html">Add A Payment</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="payroll-list.html">Payroll List</a></li>
-
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="request.html">
-                            <i class="menu-icon fa-solid fa-code-pull-request"></i>
-                            <span class="menu-title">Request</span>
-                        </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" data-bs-toggle="collapse" href="#icons" aria-expanded="false"
@@ -150,16 +121,55 @@
                             <ul class="nav flex-column sub-menu">
                                 <li class="nav-item"> <a class="nav-link" href="sales-single.html">Sales List</a></li>
                                 <li class="nav-item"> <a class="nav-link" href="sales.html">Add A New Sale</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="buyer.html">Buyers List</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="buyer-single.html">Buyers Profile</a>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="collapse" href="#iconsnew" aria-expanded="false"
+                            aria-controls="icons">
+                            <i class="menu-icon fa-solid fa-file-lines font-size-dashboard"></i>
+                            <span class="menu-title">Expense</span>
+                            <i class="menu-arrow"></i>
+                        </a>
+                        <div class="collapse" id="iconsnew">
+                            <ul class="nav flex-column sub-menu">
+                                <li class="nav-item"> <a class="nav-link" href="expense.html">Add A New Purchase</a>
                                 </li>
+                                <li class="nav-item"> <a class="nav-link" href="expense-category.html">Category</a>
+                                </li>
+                                <li class="nav-item"> <a class="nav-link" href="expense-list.html">Expense List</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="report.html">
+                            <i class="menu-icon mdi mdi-chart-line"></i>
+                            <span class="menu-title">Reports</span>
+
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="collapse" href="#employee" aria-expanded="false"
+                            aria-controls="auth">
+                            <i class="menu-icon fa-solid fa-user font-size-dashboard"></i>
+                            <span class="menu-title">Employee</span>
+                            <i class="menu-arrow"></i>
+                        </a>
+                        <div class="collapse" id="employee">
+                            <ul class="nav flex-column sub-menu">
+                                <li class="nav-item"> <a class="nav-link" href="employee.html">Add A Employee</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="employee-list.html">Employee List</a>
+                                </li>
+
                             </ul>
                         </div>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" data-bs-toggle="collapse" href="#auth" aria-expanded="false"
                             aria-controls="auth">
-                            <i class="menu-icon mdi mdi-account-circle-outline"></i>
+                            <i class="menu-icon fa-solid fa-user-plus font-size-dashboard"></i>
                             <span class="menu-title">User</span>
                             <i class="menu-arrow"></i>
                         </a>
@@ -172,20 +182,7 @@
                         </div>
                     </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" data-bs-toggle="collapse" href="#iconsnew" aria-expanded="false"
-                            aria-controls="icons">
-                            <i class="menu-icon fa-solid fa-chart-pie font-size-dashboard"></i>
-                            <span class="menu-title">Expense</span>
-                            <i class="menu-arrow"></i>
-                        </a>
-                        <div class="collapse" id="iconsnew">
-                            <ul class="nav flex-column sub-menu">
-                                <li class="nav-item"> <a class="nav-link" href="expense-list.html">Expense List</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="expense.html">Add A New Expense</a></li>
-                            </ul>
-                        </div>
-                    </li>
+
                 </ul>
             </nav>
             <!-- partial -->
@@ -207,10 +204,10 @@
                                                     Name/ID
                                                 </th>
                                                 <th>
-                                                    Phone Number
+                                                    Email
                                                 </th>
                                                 <th>
-                                                    Department
+                                                    Created At
                                                 </th>
                                                 <th>
                                                     Details
