@@ -239,10 +239,9 @@
                                             <div class="form-group row">
                                                 <label class="col-sm-12">Select Gender</label>
                                                 <div class="col-sm-12">
-                                                    <select class="form-control " required>
-                                                        <option>Select Gender</option>
-                                                        <option>Male</option>
-                                                        <option>Female</option>
+                                                    <select class="form-control " id="gender" required>
+                                                        <option value="Male" selected>Male</option>
+                                                        <option value="Female">Female</option>
                                                     </select>
                                                 </div>
                                             </div>
@@ -327,9 +326,8 @@
                                                     <label class="col-sm-12">Selling Cow</label>
                                                     <div class="col-sm-12">
                                                         <select class="form-control " name="due" required>
-                                                            <option>select</option>
                                                             <option value="Yes">Yes</option>
-                                                            <option value="No">No</option>
+                                                            <option value="No" selected>No</option>
 
                                                         </select>
                                                     </div>
@@ -492,6 +490,30 @@
     <script src="js/dashboard.js"></script>
     <script src="js/Chart.roundedBarCharts.js"></script>
     <!-- End custom js for this page-->
+
+    <script>
+        var selector = document.getElementById("gender");
+        var male = document.querySelector(".male");
+        var female = document.querySelector(".female");
+        selector.addEventListener('click', function () {
+            return function (e) {
+                var value = selector.value;
+                var gender = selector.options[selector.selectedIndex].text;
+
+                if (gender == "Male") {
+                    console.log(gender);
+                    male.style.display = "flex";
+                    female.style.display = "none";
+                }
+                else {
+                    console.log(gender);
+                    male.style.display = "none";
+                    female.style.display = "flex";
+                }
+            };
+        }()
+        )
+    </script>
 </body>
 
 </html>
